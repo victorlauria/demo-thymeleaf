@@ -10,6 +10,8 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping(value = "/demo")
 public class DemoResource {
 
+//	private final String TELA_DEMO = "demo";
+	
 	@RequestMapping(value = "/ola", method = RequestMethod.GET)
 	public String ola(ModelMap modelMap) {
 		modelMap.addAttribute("atributo", "Thymeleaf");
